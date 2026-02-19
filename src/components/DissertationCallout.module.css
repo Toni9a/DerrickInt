@@ -1,0 +1,36 @@
+.box {
+    background: rgba(34, 197, 94, 0.06);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.text {
+    color: #86efac;
+    font-size: 12px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.label {
+    color: #4ade80;
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,153 @@
+.quizHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.progressContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.progressText {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.scoreText {
+    font-size: 12px;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.questionCard {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 20px;
+}
+
+.questionText {
+    font-size: clamp(15px, 4vw, 18px);
+    line-height: 1.6;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.explanationBox {
+    background: rgba(var(--accent-color-rgb), 0.06);
+    border: 1px solid rgba(var(--accent-color-rgb), 0.25);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 16px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.explanationTitle {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.explanationText {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.nextBtn {
+    border: none;
+    color: var(--bg-color);
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: var(--transition-normal);
+}
+
+.backBtn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-secondary);
+    padding: 10px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 24px;
+    display: inline-block;
+}
+
+.footerActions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.bookmarkBtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.5;
+    transition: var(--transition-fast);
+}
+
+.bookmarkBtnActive {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .questionCard {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .quizHeader {
+        margin-bottom: 20px;
+    }
+
+    .explanationBox {
+        padding: 16px;
+    }
+
+    .nextBtn {
+        padding: 12px 24px;
+    }
+}

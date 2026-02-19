@@ -1,0 +1,39 @@
+.btn {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    transition: all 0.2s ease;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--text-secondary);
+}
+
+.btn:hover:not(.disabled) {
+    border-color: rgba(var(--accent-color-rgb), 0.5);
+    background: rgba(var(--accent-color-rgb), 0.05);
+}
+
+.disabled {
+    cursor: default;
+}
+
+.letter {
+    font-weight: 900;
+    font-size: 13px;
+    min-width: 20px;
+    padding-top: 1px;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.status {
+    margin-left: auto;
+    font-size: 16px;
+}
